@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCast : MonoBehaviour
 {
-    public static float DistanceFromPlayer;
+    public static float DistanceFromPlayer; //so need to create a reference for another scripts to use this variable
     public float ToTarget;//distance of ray hitting to the target..gives the distance b/w player and object
 
     // Update is called once per frame
