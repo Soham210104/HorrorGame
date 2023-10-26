@@ -12,8 +12,7 @@ public class OpeningScene : MonoBehaviour
 
     void Start()
     {
-
-        PlayerController.GetComponent<FirstPersonMovement>().enabled = false;
+        //PlayerController.GetComponent<FirstPersonMovement>().enabled = false;
         StartCoroutine(StartScene());
     }
     // Update is called once per frame
@@ -21,10 +20,10 @@ public class OpeningScene : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);      
         FadeIn.SetActive(false);    
-        TextBox.text = "I need to get out of here";   
+        TextBox.text = "Let's get outta here!";   
         yield return new WaitForSeconds(2f);     
         TextBox.text = "";
-        PlayerController.GetComponent<FirstPersonMovement>().enabled = true;
+        //PlayerController.GetComponent<FirstPersonMovement>().enabled = true;
     
     }
 }
