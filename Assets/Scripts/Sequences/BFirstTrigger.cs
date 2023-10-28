@@ -17,7 +17,7 @@ public class BFirstTrigger : MonoBehaviour
 
     IEnumerator ScenePlayer() 
     {
-        TextBox.text = "Oh!There is a weapon there.";
+        TextBox.text = "I see a weapon there.";
         yield return new WaitForSeconds(2.5f);
         TextBox.text = "";
         PlayerScript.GetComponent<FirstPersonMovement>().enabled = true;
